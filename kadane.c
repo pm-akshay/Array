@@ -1,7 +1,7 @@
 int maxSubarraySum(int arr[], int n) {
     // Code here
     int i;
-    int curr_sum=0,max_sum=0;
+    int curr_sum=0,max_sum=arr[0];
     for(i=0;i<n;i++){
         curr_sum+=arr[i];
         if (curr_sum > max_sum) {
